@@ -48,6 +48,7 @@ public interface UserMapper {
         .username(dto.getUsername())
         .password(dto.getPassword())
         .roles(roles)
+        .active(true) // Asignar valor por defecto
         .build();
   }
 }
